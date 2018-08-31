@@ -1,6 +1,6 @@
 // Place for all the scss variables and mixins
 
-$primary-color: rgb(121, 120, 120);
+$primary-color: rgb(250, 246, 246);
 $secondary-color: #1aeeae;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -28,6 +28,15 @@ $background-opacity: 0.7;
                 background: rgba($primary-color, $background-opacity);
             }
         }
+    }
+}
+
+//Set text color function
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else {
+        @return #fff;
     }
 }
 
