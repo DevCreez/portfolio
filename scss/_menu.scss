@@ -22,7 +22,7 @@
         .btn-line {
             //Line 1 - Rotate
             &:nth-child(1) {
-                background: green;
+                background: $secondary-color;
                 transform: rotate(45deg) translate(5px, 5px)
             }
             //Line 2 - Hide
@@ -31,7 +31,7 @@
             }
             //Line 3 - Rotate
             &:nth-child(3) {
-                background: green;
+                background: $secondary-color;
                 transform: rotate(-45deg) translate(7px, -6px)
             }
         }
@@ -64,7 +64,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: rgb(25, 200, 171);
+        background: darken($primary-color, 5);
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -115,7 +115,7 @@
         font-size: 30px;
         text-transform: uppercase;
         padding: 1rem 0;
-        font-weight: 300;
+        font-weight: 400;
         color: #fff;
         text-decoration: none;
         @include easeOut;
