@@ -1,11 +1,17 @@
 //Widescreens
 @include mediaXl {
-
+    //Using .projects only effects the work/projects page
+    .projects {
+        grid-template-columns: repeat(4, 1fr); //when the screen is xlarge each image repeats 4 times, 1 fractional
+    }
 }
 
 //Desktops & Laptops
 @include mediaLg {
-    
+    //Using .projects only effects the work/projects page
+    .projects {
+        grid-template-columns: repeat(3, 1fr); //when the screen is large each image repeats 3 times, 1 fractional
+    }
 }
 
 //Tablets & Small Laptops
@@ -57,12 +63,22 @@
 
         grid-template-columns: 1fr;
     }
+
+    //Using .projects only effects the work/projects page
+    .projects {
+        grid-template-columns: repeat(2, 1fr); //when the screen is medium each image repeats 4 times, 1 fractional
+    }
 }
 
 //Smartphones
 @include mediaSm {
     main#home h1 {
         margin-top: 10vh;
+    }
+
+    //Using .projects only effects the work/projects page
+    .projects {
+        grid-template-columns: 1fr; //when the screen is medium each image repeats 4 times, 1 fractional
     }
 }
 
